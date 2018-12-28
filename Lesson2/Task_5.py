@@ -6,4 +6,3 @@ for i in range(32, 128):
     print(str(i).rjust(4, ' '), chr(i), '  ', end='')
     if (i-31) % 10 == 0:
         print()
-
