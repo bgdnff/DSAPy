@@ -2,7 +2,7 @@
 
 import random
 # ________генерация массива______________
-SIZE = 20
+SIZE = 20  # >0
 MIN_ITEM = 0
 MAX_ITEM = 10
 array = [random.randint(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
@@ -18,8 +18,8 @@ print(array)
 # а во-вторых - лениво :)
 
 freq_dic = [[], []]
-max_frequency = 0
-max_frequency_number = 0
+max_frequency = 1
+max_frequency_number = MIN_ITEM
 for item in array:
     for index,key in enumerate(freq_dic[0]):
         if key == item:
