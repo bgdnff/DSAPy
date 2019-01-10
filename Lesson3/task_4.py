@@ -31,6 +31,5 @@ for item in array:
     else:
         freq_dic[0].append(item)
         freq_dic[1].append(1)
-print(freq_dic[0])
-print(freq_dic[1])
+
 print(f'чаще всего ({max_frequency} раз)встречается число {max_frequency_number}')
