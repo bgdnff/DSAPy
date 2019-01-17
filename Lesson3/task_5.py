@@ -12,9 +12,13 @@ print(array)
 # ________решение____________________
 
 max_pos = -1
-maximum = MIN_ITEM
+# maximum = MIN_ITEM
 for index, item in enumerate(array):
-    if 0 > item > maximum:
+    if max_pos == -1:
+        if item < 0:
+            max_pos = index
+            maximum = item
+    elif 0 > item > maximum:
         max_pos = index
         maximum = item
 

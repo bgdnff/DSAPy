@@ -10,7 +10,11 @@ array = [random.randint(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
 print(array)
 
 # решение
-double_min = [MAX_ITEM, MAX_ITEM]
+if array[0] > array[1]:
+    double_min = [array[0], array[1]]
+else:
+    double_min = [array[1], array[0]]
+
 for item in array:
     if item < double_min[0]:
         double_min[0] = item

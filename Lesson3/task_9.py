@@ -24,13 +24,13 @@ for line in matrix:
 # работает хуже чем при работе с матрицей как со списками,
 # или это только эстетическое пожелание?
 
-max = MIN_ITEM
-for i in range(SIZE_X):
-    min = MAX_ITEM
-    for j in range(SIZE_Y):
-        if min > matrix[j][i]:
-            min = matrix[j][i]
-    if max < min:
-        max = min
 
-print(f'максимальный минимум по столбцам: {max}')
+for i in range(SIZE_X):
+    minimum = matrix[0][i]
+    for j in range(SIZE_Y):
+        if minimum > matrix[j][i]:
+            minimum = matrix[j][i]
+    if i == 0 or maximum < minimum:
+        maximum = minimum
+
+print(f'максимальный минимум по столбцам: {maximum}')

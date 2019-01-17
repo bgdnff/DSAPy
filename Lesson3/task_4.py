@@ -19,7 +19,7 @@ print(array)
 
 freq_dic = [[], []]
 max_frequency = 1
-max_frequency_number = MIN_ITEM
+max_frequency_number = array[0]
 for item in array:
     for index,key in enumerate(freq_dic[0]):
         if key == item:
