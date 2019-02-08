@@ -6,10 +6,10 @@
 import random
 
 
-def generate_array(SIZE):
+def generate_array(size):
     LOW = -100
     HIGTH = 100
-    return [random.randint(LOW, HIGTH-1) for _ in range(SIZE)]
+    return [random.randint(LOW, HIGTH-1) for _ in range(size)]
 
 
 def bubble_sort(array):
